@@ -13,10 +13,11 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import MyButton from 'vue-cli-comp-lib';
+import {MyButton} from "vue-cli-comp-lib";
 
-
-@Component
+@Component({
+  components: { MyButton },
+})
 export default class App extends Vue {}
 </script>
 
